@@ -7,8 +7,6 @@ const originalReplace = Router.prototype.replace;
   Router.prototype.replace = function replace(location) {
   return originalReplace.call(this, location).catch(err => err);
 };
-
-
 const Home = () => import('../views/home/home')
 const About = () => import('../views/about/about')
 const Mine = () => import('../views/mine/mine')

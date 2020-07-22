@@ -4,8 +4,6 @@
   </div>
 </template>
 
-
-
 <style>
   #tabbar {
     position: fixed;

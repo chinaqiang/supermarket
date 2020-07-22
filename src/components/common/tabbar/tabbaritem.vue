@@ -1,5 +1,5 @@
 <template>
-  <div id="tabbaritem" @click="tabClick">
+  <div class="tabbaritem" @click="tabClick">
       <div v-if="!isActive"><slot name="info_default"></slot></div>
       <div v-else class="info_active"><slot name="info_active"></slot></div>
       <div :style='isActiveColor'><slot name="info_text"></slot></div>
@@ -31,7 +31,7 @@ export default {
 }
 </script>
 <style>
-  #tabbaritem {
+  .tabbaritem {
     flex: 1;
     text-align: center;
     font-size: 14px;
