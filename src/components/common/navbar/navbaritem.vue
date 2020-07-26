@@ -29,12 +29,7 @@ export default {
 }
 </script>
 <style>
-    .navbaritem {
-    display: flex;
-    box-shadow: 0 1px 1px rgba(255,255,0,.1);
-    height: 44px;
-    line-height: 44px;
-  }
+
   .left,
   .right {
     width: 60px;

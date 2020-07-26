@@ -68,7 +68,11 @@ export default {
     stopTimer: function() {
       window.clearInterval(this.playTimer)
     },
-
+    setTransform: function (position) {
+        this.swiperStyle.transform = `translate3d(${position}px, 0, 0)`;
+        this.swiperStyle['-webkit-transform'] = `translate3d(${position}px), 0, 0`;
+        this.swiperStyle['-ms-transform'] = `translate3d(${position}px), 0, 0`;
+    },
     // 滚到正确的位置
     scrollContent: function(currentPosition) {
       // 设置正在滚动
@@ -121,8 +125,8 @@ export default {
         this.totalWidth = swiperEl.offsetWidth;
         this.swiperStyle - swiperEl.style;
        //让swiper 元素 显示第一个（目前显示前面添加的最后一个元素）
-        this.setTransform(-this.totalWidth)
       }
+        this.setTransform(-this.totalWidth)
     },
 
     /*
